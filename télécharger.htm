@@ -42,23 +42,16 @@
   </section>
 
   <!-- SECTION À PROPOS -->
-  <<section class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center">
-  
-  <!-- PHOTO -->
-  <img src="images/profil.jpg" alt="Photo de Dieynaba Diallo"
-       class="w-64 mx-auto rounded-full shadow-lg">
-
-  <!-- TEXTE -->
-  <div>
-    <h2 class="text-3xl font-semibold mb-4">À propos de moi</h2>
-    <p class="text-gray-600 leading-relaxed">
-      Je suis étudiante en génie informatique et développeuse web débutante.
-      Passionnée par le développement web, je crée des sites modernes et performants
-      avec HTML, Tailwind CSS et les bases de JavaScript.
-    </p>
-  </div>
-
-</section>
+  <section id="apropos" class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">À propos de moi</h2>
+      <p class="text-gray-700 text-center md:text-left">
+        Je suis une développeuse web débutante, motivée par la création de sites web modernes et accessibles.  
+        Je me forme aux technologies front-end et je réalise des projets pratiques pour améliorer mes compétences.  
+        Mon objectif est d’intégrer une équipe où je pourrai continuer à apprendre et évoluer.
+      </p>
+    </div>
+  </section>
 
   <!-- SECTION FORMATION -->
   <section id="formation" class="py-20 bg-gray-100 px-4">
@@ -114,40 +107,22 @@
   </section>
 
   <!-- SECTION PROJETS -->
-  <div class="grid md:grid-cols-3 gap-6">
-
-  <div class="bg-white rounded-lg shadow overflow-hidden">
-    <img src="images/projet1.jpg" alt="Projet portfolio">
-    <div class="p-4">
-      <h3 class="font-semibold text-lg">Portfolio personnel</h3>
-      <p class="text-gray-600 text-sm">
-        Site web personnel réalisé avec HTML et Tailwind CSS.
-      </p>
-    </div>
-  </div>
-
-  <div class="bg-white rounded-lg shadow overflow-hidden">
-    <img src="images/projet2.jpg" alt="Carte de profil">
-    <div class="p-4">
-      <h3 class="font-semibold text-lg">Carte de profil</h3>
-      <p class="text-gray-600 text-sm">
-        Composant UI responsive.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-
+  <section id="projets" class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <!-- Portfolio personnel -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Portfolio personnel</h3>
+          <p class="text-gray-700 mb-4">Site web responsive réalisé avec HTML, Tailwind CSS et GitHub Pages.</p>
+          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
         </div>
         <!-- To-Do List -->
         <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
           <h3 class="text-xl font-semibold mb-2">To-Do List Interactive</h3>
           <p class="text-gray-700 mb-4">Application web responsive pour gérer les tâches quotidiennes. HTML, Tailwind CSS, JavaScript.</p>
-          <a href="#projets" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-300">
-  Voir mes projets
-</a>
-
+          <a href="#" class="text-blue-600 hover:underline">Voir le projet</a>
+        </div>
       </div>
     </div>
   </section>
