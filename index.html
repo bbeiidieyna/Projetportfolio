@@ -7,16 +7,39 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
+</head><style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fadeIn {
+  animation: fadeIn 1s forwards;
+}
+</style>
+
 
 
 <body class="font-sans bg-gray-100 text-gray-800">
+  <!-- ===== MENU DE NAVIGATION ===== -->
+<header id class="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur shadow z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="text-xl font-bold text-blue-600">Dieynaba Diallo</div>
+    <ul class="flex space-x-6">
+      <li><a href= "#home" class="hover:text-blue-500 transition">Accueil</a></li>
+      <li><a href="#about" class="hover:text-blue-500 transition">À propos</a></li>
+      <li><a href="#skills" class="hover:text-blue-500 transition">Compétences</a></li>
+      <li><a href="#projets" class="hover:text-blue-500 transition">Projets</a></li>
+      <li><a href="#contact" class="hover:text-blue-500 transition">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
 <!-- ===== HEADER / PAGE DE GARDE ===== -->
-<header class="min-h-screen flex flex-col justify-center items-center bg-white text-center px-4">
+<header id class="min-h-screen flex flex-col justify-center items-center bg-white text-center px-4">
   
-       <img src="images/profil.jpg" alt="Photo de Dieynaba Diallo"
-     class="w-44 h-44 rounded-full border-4 border-white shadow-xl object-cover hover:scale-105 transition">
+       <img src="images/profil.jpg" alt="Photo de profil"
+     class="w-44 h-44 rounded-full border-4 border-white shadow-xl object-cover hover:scale-105 transition-transform duration-500">
 
 
   <h1 class="text-4xl font-bold">Dieynaba Diallo</h1>
@@ -31,7 +54,7 @@
 </header>
 
 <!-- ===== À PROPOS ===== -->
-<section class="py-16 bg-gray-100">
+<section id class="py-16 bg-gray-100">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-6 text-center">À propos de moi</h2>
 
@@ -44,7 +67,7 @@
 </section>
 
 <!-- ===== COMPÉTENCES ===== -->
-<section class="py-16 bg-white">
+<section id class="py-16 bg-white">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-10 text-center">Compétences</h2>
 
@@ -58,7 +81,7 @@
 </section>
 
 <!-- ===== PROJETS ===== -->
-<section class="py-16 bg-gray-100">
+<section id class="py-16 bg-gray-100">
   <div class="max-w-5xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-12 text-center">Projets</h2>
 
@@ -80,14 +103,14 @@
 
       <a href="#"
          class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
-        Voir le projet
+        
       </a>
     </div>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section class="py-16 bg-white">
+<section id class="py-16 bg-white">
   <div class="max-w-4xl mx-auto px-4 text-center">
     <h2 class="text-3xl font-bold mb-6">Contact</h2>
 
